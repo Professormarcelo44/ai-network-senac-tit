@@ -1,0 +1,70 @@
+COMMAND     PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+systemd       1            root  103u  IPv4   7411      0t0  TCP *:22 (LISTEN)
+node_expo   693   node_exporter    3u  IPv6   9565      0t0  TCP *:9100 (LISTEN)
+node_expo   693   node_exporter    7u  IPv6  27879      0t0  TCP 127.0.0.1:9100->127.0.0.1:33592 (ESTABLISHED)
+prometheu   723      prometheus    6u  IPv6  10436      0t0  TCP *:9091 (LISTEN)
+prometheu   723      prometheus   10u  IPv4  27878      0t0  TCP 127.0.0.1:33592->127.0.0.1:9100 (ESTABLISHED)
+prometheu   723      prometheus   16u  IPv4  27823      0t0  TCP 127.0.0.1:58280->127.0.0.1:9091 (ESTABLISHED)
+prometheu   723      prometheus   17u  IPv6  27824      0t0  TCP 127.0.0.1:9091->127.0.0.1:58280 (ESTABLISHED)
+mysqld     1001           mysql   21u  IPv6   8825      0t0  TCP *:33060 (LISTEN)
+mysqld     1001           mysql   36u  IPv4  10451      0t0  TCP *:3306 (LISTEN)
+grafana    1115         grafana   13u  IPv6  10511      0t0  TCP *:3000 (LISTEN)
+sshd       1974            root    3u  IPv4   7411      0t0  TCP *:22 (LISTEN)
+sshd       1975            root    4u  IPv4  16525      0t0  TCP 10.24.82.220:22->10.24.82.28:55282 (ESTABLISHED)
+sshd       2078           senac    4u  IPv4  16525      0t0  TCP 10.24.82.220:22->10.24.82.28:55282 (ESTABLISHED)
+java      19744          tomcat   44u  IPv6  50195      0t0  TCP *:8080 (LISTEN)
+systemd-n 20370 systemd-network   22u  IPv4  52574      0t0  UDP 10.24.82.47:68
+systemd-r 20371 systemd-resolve   14u  IPv4  52055      0t0  UDP 127.0.0.53:53
+systemd-r 20371 systemd-resolve   15u  IPv4  52056      0t0  TCP 127.0.0.53:53 (LISTEN)
+systemd-r 20371 systemd-resolve   16u  IPv4  52057      0t0  UDP 127.0.0.54:53
+systemd-r 20371 systemd-resolve   17u  IPv4  52058      0t0  TCP 127.0.0.54:53 (LISTEN)
+apache2   20429            root    3u  IPv4  52631      0t0  TCP *:80 (LISTEN)
+apache2   20429            root    4u  IPv4  52633      0t0  TCP *:8888 (LISTEN)
+apache2   20446        www-data    3u  IPv4  52631      0t0  TCP *:80 (LISTEN)
+apache2   20446        www-data    4u  IPv4  52633      0t0  TCP *:8888 (LISTEN)
+apache2   20447        www-data    3u  IPv4  52631      0t0  TCP *:80 (LISTEN)
+apache2   20447        www-data    4u  IPv4  52633      0t0  TCP *:8888 (LISTEN)
+apache2   20448        www-data    3u  IPv4  52631      0t0  TCP *:80 (LISTEN)
+apache2   20448        www-data    4u  IPv4  52633      0t0  TCP *:8888 (LISTEN)
+apache2   20449        www-data    3u  IPv4  52631      0t0  TCP *:80 (LISTEN)
+apache2   20449        www-data    4u  IPv4  52633      0t0  TCP *:8888 (LISTEN)
+apache2   20450        www-data    3u  IPv4  52631      0t0  TCP *:80 (LISTEN)
+apache2   20450        www-data    4u  IPv4  52633      0t0  TCP *:8888 (LISTEN)
+sshd      20896            root    4u  IPv4  56824      0t0  TCP 10.24.82.220:22->10.24.82.40:63632 (ESTABLISHED)
+sshd      21018           senac    4u  IPv4  56824      0t0  TCP 10.24.82.220:22->10.24.82.40:63632 (ESTABLISHED)
+---
+
+UNIT                        LOAD   ACTIVE SUB     DESCRIPTION
+  apache2.service             loaded active running The Apache HTTP Server
+  cron.service                loaded active running Regular background program processing daemon
+  dbus.service                loaded active running D-Bus System Message Bus
+  fwupd.service               loaded active running Firmware update daemon
+  getty@tty1.service          loaded active running Getty on tty1
+  grafana-server.service      loaded active running Grafana instance
+  ModemManager.service        loaded active running Modem Manager
+  multipathd.service          loaded active running Device-Mapper Multipath Device Controller
+  mysql.service               loaded active running MySQL Community Server
+  node_exporter.service       loaded active running Node Exporter
+  polkit.service              loaded active running Authorization Manager
+  prometheus.service          loaded active running Prometheus
+  rsyslog.service             loaded active running System Logging Service
+  ssh.service                 loaded active running OpenBSD Secure Shell server
+  systemd-journald.service    loaded active running Journal Service
+  systemd-logind.service      loaded active running User Login Management
+  systemd-networkd.service    loaded active running Network Configuration
+  systemd-resolved.service    loaded active running Network Name Resolution
+  systemd-timesyncd.service   loaded active running Network Time Synchronization
+  systemd-udevd.service       loaded active running Rule-based Manager for Device Events and Files
+  tomcat11.service            loaded active running Apache Tomcat11
+  udisks2.service             loaded active running Disk Manager
+  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+  upower.service              loaded active running Daemon for power management
+  user@1000.service           loaded active running User Manager for UID 1000
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+25 loaded units listed.
+---
+

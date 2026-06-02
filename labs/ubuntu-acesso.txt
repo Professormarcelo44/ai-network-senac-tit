@@ -1,0 +1,11 @@
+Apache2
+ls -lh /var/www/html
+---
+
+
+MySQL Server
+sudo mysql -u root -p
+SHOW DATABASES;
+exit
+---
+
